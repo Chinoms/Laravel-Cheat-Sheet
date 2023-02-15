@@ -10,3 +10,7 @@ The following example check for either of two conditions using the Terneary oper
 The next example checks for a single condition  
 
 ```<li class="{{ (request()->is('profile')) ? 'active' : '' }}">```
+
+
+### Send email
+``` Mail::to($request->email)->send(new PatientRegistered);```
